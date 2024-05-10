@@ -5,11 +5,13 @@ const Button = ({ label, iconURL }) => {
       type="button"
     >
       {label}
-      <img
-        src={iconURL}
-        alt="arrow-right-icon"
-        className="rounded-full w-5 h-5 ml-5"
-      />
+      {iconURL && (
+        <img
+          src={iconURL}
+          alt="arrow-right-icon"
+          className="rounded-full w-5 h-5 ml-5"
+        />
+      )}
     </button>
   );
 };
